@@ -8,8 +8,10 @@ subtitle: ''
 description: ''
 keywords:
 author: Ibrahim Fiqhan
-language: en
-timezone: ''
+language:
+- en
+- id
+timezone: 'Asia/Jakarta'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
