@@ -1,0 +1,38 @@
+############# Bahasa Indonesia navigation ##############
+
+# main menu
+[[main]]
+name = "Beranda"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Portofolio"
+url = "/portfolio"
+weight = 2
+
+[[main]]
+name = "Layanan"
+url = "/services"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "/blog"
+weight = 4
+
+[[main]]
+name = "Tentang"
+url = "/about"
+weight = 5
+
+# footer menu
+[[footer]]
+name = "Portofolio"
+url = "/portfolio"
+weight = 1
+
+[[footer]]
+name = "Tentang"
+url = "/about"
+weight = 2

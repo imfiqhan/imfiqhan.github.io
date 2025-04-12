@@ -1,0 +1,28 @@
+<a href="{{ .RelPermalink }}" class="block">
+  <article
+    class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:hover:shadow-amber-500/50">
+    <img alt="" src="{{ .Params.image }}" class="h-56 w-full object-cover" />
+
+    <div class="dark:bg-darkmode-light bg-white p-4 sm:p-6">
+      <div class="flex flex-row items-center justify-between">
+        <time datetime="2022-10-10" class="block text-xs">
+          {{ .Date.Format "2 Jan 2006" }}
+        </time>
+        <div>
+          <p
+            class="bg-light dark:bg-darkmode-light text-text-dark dark:text-darkmode-text-dark inline-block rounded px-2 py-1 text-xs">
+            {{ .Type | humanize }}
+          </p>
+        </div>
+      </div>
+
+      <h3 class="mt-0.5 text-lg">
+        {{ .Title | markdownify }}
+      </h3>
+
+      <p class="mt-2 line-clamp-3 text-sm/relaxed">
+        {{ .Description | markdownify }}
+      </p>
+    </div>
+  </article>
+</a>

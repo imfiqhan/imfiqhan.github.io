@@ -1,0 +1,30 @@
+<article class="relative pl-16">
+  <div class="text-base/7 font-semibold text-gray-900">
+    <div
+      class="bg-primary dark:bg-darkmode-primary absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg">
+      <i class="{{ .Params.Icon }} dark:text-text-dark text-white"></i>
+    </div>
+
+    <a href="{{ .RelPermalink }}">
+      <h3 class="mt-0.5 text-lg font-medium">
+        {{ .Title | markdownify }}
+      </h3>
+    </a>
+  </div>
+
+  <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+    {{ .Params.description | markdownify }}
+  </p>
+
+  <a
+    href="{{ .RelPermalink }}"
+    class="group text-primary dark:text-darkmode-text-dark mt-4 inline-flex items-center gap-1 text-sm font-medium transition">
+    {{ T "read_more" }}
+
+    <span
+      aria-hidden="true"
+      class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+      &rarr;
+    </span>
+  </a>
+</article>

@@ -1,0 +1,22 @@
+<div class="bg-primary dark:bg-darkmode-light rounded-xl px-4 py-16 xl:p-20">
+  <div class="row items-center justify-between">
+    <div class="mb-10 md:order-2 md:col-5 md:mb-0 lg:col-4">
+      {{ partial "image" (dict "Src" .Params.image "Alt" "call to action"
+        "Class" "w-full")
+      }}
+    </div>
+    <div class="text-light md:order-1 md:col-7">
+      <h2 class="text-light mb-2">{{ .Title | markdownify }}</h2>
+      <p class="mb-6">{{ .Params.description | markdownify }}</p>
+      {{ with .Params.button }}
+        {{ if .enable }}
+          <a class="btn btn-secondary" href="{{ .link | absURL }}">
+            {{ .label }}
+
+            <i class="fa fa-rocket pl-2"></i>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

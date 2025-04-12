@@ -1,0 +1,66 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container">
+      <ul class="text-center">
+        {{/* categories */}}
+        {{ if eq .Permalink (`categories/` | absLangURL) }}
+          {{ partial "components/term-list" dict "Section" "portfolio" }}
+          <h2 class="text-h3">Blog</h2>
+          {{ range $items := site.Taxonomies.categories }}
+            {{ $filteredItems := where $items "Section" "blog" }}
+            {{ if gt (len $filteredItems) 0 }}
+              <li class="m-3 inline-block">
+                <a
+                  href="{{ .Page.Permalink }}"
+                  class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
+                  {{ .Page.Title }}
+                  <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                    {{ len $filteredItems }}
+                  </span>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{/* tags */}}
+        {{ if eq .Permalink (`tags/` | absLangURL) }}
+          <h2 class="text-h3">Portfolio</h2>
+          {{ range $items := site.Taxonomies.tags }}
+            {{ $filteredItems := where $items "Section" "portfolio" }}
+            {{ if gt (len $filteredItems) 0 }}
+              <li class="m-3 inline-block">
+                <a
+                  href="{{ .Page.Permalink }}"
+                  class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
+                  {{ .Page.Title }}
+                  <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                    {{ .Count }}
+                  </span>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          <h2 class="text-h3">Blog</h2>
+          {{ range $items := site.Taxonomies.tags }}
+            {{ $filteredItems := where $items "Section" "blog" }}
+            {{ if gt (len $filteredItems) 0 }}
+              <li class="m-3 inline-block">
+                <a
+                  href="{{ .Page.Permalink }}"
+                  class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
+                  {{ .Page.Title }}
+                  <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                    {{ .Count }}
+                  </span>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

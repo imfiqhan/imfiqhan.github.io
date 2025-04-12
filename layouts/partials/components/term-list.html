@@ -1,0 +1,19 @@
+<div>
+  {{ $section := .Section }}
+  <h2 class="text-h3">{{ $section }}</h2>
+  {{ range $items := site.Taxonomies.categories }}
+    {{ $filteredItems := where $items "Section" $section }}
+    {{ if gt (len $filteredItems) 0 }}
+      <li class="m-3 inline-block">
+        <a
+          href="{{ .Page.Permalink }}"
+          class="bg-light text-text-dark dark:bg-darkmode-light dark:text-darkmode-text-dark block rounded px-4 py-2 text-xl">
+          {{ .Page.Title }}
+          <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+            {{ len $filteredItems }}
+          </span>
+        </a>
+      </li>
+    {{ end }}
+  {{ end }}
+</div>
