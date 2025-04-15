@@ -30,7 +30,7 @@ project_url: "https://fiqhan.dev"
 - **JavaScript**: Untuk meningkatkan interaktivitas dan dinamika halaman.
 - **GitHub Pages**: Untuk hosting dan deployment website secara gratis dan stabil.
 
-## Potensi Pengembangan
+## Potensi Peningkatan
 
 - **Dark Mode**: Menambahkan tema gelap untuk kenyamanan pengguna saat menjelajah di malam hari.
 - **Peningkatan Mobile Responsiveness**: Optimalisasi lebih lanjut untuk tampilan di layar kecil.
