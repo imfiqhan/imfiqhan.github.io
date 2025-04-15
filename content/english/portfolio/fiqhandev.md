@@ -30,7 +30,7 @@ project_url: "https://fiqhan.dev"
 - **JavaScript**: Adds interactive elements and smooth user experience.
 - **GitHub Pages**: Provides free and reliable hosting for the entire site.
 
-## Posibilities for Improvement
+## Possibilities for Improvement
 
 - **Dark Mode**: Implementing a dark theme option for users who prefer low-light interfaces.
 - **Mobile Responsiveness Enhancements**: Further fine-tuning for small screen devices.

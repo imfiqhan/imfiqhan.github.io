@@ -27,7 +27,7 @@ This project highlights my journey and achievements in earning the **AWS Certifi
 - **Tools:** Terraform, GitHub Actions, AWS CLI, Visual Studio Code
 - **Architectural Models:** Multi-tier architecture, serverless design patterns, microservices
 
-## Posibilities for Improvement
+## Possibilities for Improvement
 
 - **Get more certifications**, such as AWS Certified Developer – Associate, AWS Certified DevOps Engineer – Professional, etc.
 - Implement more **hands-on projects** focused on hybrid and multi-cloud architecture
