@@ -11,7 +11,7 @@ draft: false
 project_url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/09730e58c1c34882899002734dd13325"
 ---
 
-This project highlights my journey and achievements in earning the **AWS Certified Solutions Architect – Associate** certification. It reflects my ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS, with a strong understanding of cloud infrastructure, cost optimization, and security best practices.
+This post highlights my journey and achievements in earning the **AWS Certified Solutions Architect – Associate** certification. It reflects my ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS, with a strong understanding of cloud infrastructure, cost optimization, and security best practices.
 
 ## Key Features
 

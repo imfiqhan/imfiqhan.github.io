@@ -11,7 +11,7 @@ draft: false
 project_url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/09730e58c1c34882899002734dd13325"
 ---
 
-Proyek ini menyoroti perjalanan dan pencapaian saya dalam meraih **sertifikasi AWS Certified Solutions Architect – Associate**. Artikel ini mencerminkan kemampuan saya dalam merancang dan menerapkan sistem yang skalabel, tersedia tinggi (high availability), dan toleran terhadap kesalahan di platform AWS, dengan pemahaman kuat terhadap infrastruktur cloud, optimasi biaya, dan praktik keamanan terbaik.
+*Post* ini menyoroti perjalanan dan pencapaian saya dalam meraih **sertifikasi AWS Certified Solutions Architect – Associate**. Artikel ini mencerminkan kemampuan saya dalam merancang dan menerapkan sistem yang skalabel, tersedia tinggi (high availability), dan toleran terhadap kesalahan di platform AWS, dengan pemahaman kuat terhadap infrastruktur cloud, optimasi biaya, dan praktik keamanan terbaik.
 
 ## Fitur Utama
 
